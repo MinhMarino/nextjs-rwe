@@ -1,0 +1,10 @@
+{
+    "arrowParens": "always",
+    "embeddedLanguageFormatting": "auto",
+    "htmlWhitespaceSensitivity": "css",
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "useTabs": true,
+    "endOfLine": "crlf"
+}
