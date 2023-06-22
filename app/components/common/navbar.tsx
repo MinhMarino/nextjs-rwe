@@ -1,12 +1,17 @@
-'use client'
-import { Collapse, Dropdown, initTE } from "tw-elements";
+"use client"
 import { useEffect } from "react";
-import Image from 'next/image';
 
 export default function Navbar() {
     useEffect(() => {
-        initTE({ Collapse, Dropdown });
-    });
+        const initTE = async () => {
+          const { default: initTE } = await import('tw-elements');
+          const { Collapse, Dropdown } = await import('tw-elements'); 
+          initTE({ Collapse, Dropdown });
+        };
+        initTE();
+    }, []);
+
+    
     return (
         <>
             <nav
