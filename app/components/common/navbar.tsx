@@ -4,14 +4,14 @@ import { useEffect } from "react";
 export default function Navbar() {
     useEffect(() => {
         const initTE = async () => {
-          const { default: initTE } = await import('tw-elements');
+          const { initTE } = await import('tw-elements');
           const { Collapse, Dropdown } = await import('tw-elements'); 
           initTE({ Collapse, Dropdown });
         };
         initTE();
     }, []);
 
-    
+
     return (
         <>
             <nav
